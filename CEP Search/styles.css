@@ -1,9 +1,9 @@
 :root {
-    --bg-color: #000000;
+    --bg-color: #5B0E91;
     --secondary-bg-color: #FFFFFF;
-    --primary-color: #B372CA;
-    --secondary-color: #25cc88;
-    --text-color: #B372CA;
+    --primary-color: #FFD700;
+    --secondary-color: #FFD700;
+    --text-color: #000000;
     --border-color: #20235b;
 }
 
@@ -14,7 +14,7 @@
 
 /* Titulo do fórmulário */
 #form-header p {
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 /* Formulário */
@@ -61,6 +61,23 @@
 
 #complement {
     resize: none;
+    border: 2px solid;
+}
+
+#form-container footer {
+    font-size: 16px;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+#form-container a {
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration:none;
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 /* Responsive */

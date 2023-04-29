@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Genos', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #5B0E91;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+#day, #season {
+    color: #00FF00;
+    font-size: 48px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    color: #FFD700;
+    align-item: flex-end;
+    font-size: 80px;
+}
+
+.timer #schedule {
+    font-size: 24px;
+}
+
+footer {
+    font-size: 22px;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #FFD700;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+a:hover {
+    font-weight: bold;
+}
