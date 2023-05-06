@@ -1,89 +1,153 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/ba74c2f00e.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,400;1,700&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-</head>
-<body>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <main>
-        <header>
-            <h2>Programming Courses</h2>
+      <header>
+        <h2>Programming Courses</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ea
+          molestiae quia incidunt unde voluptates magni fugit iusto hic, <br />
+          adipisci reprehenderit dolores eveniet enim. Perferendis
+          necessitatibus culpa voluptate tenetur facere?
+        </p>
+      </header>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- <button id="prev">
+                    <i class="fa-solid fa-arrow-left fa-xl" style="color: #ffd700;"></i>
+                </button> -->
+          <div class="swiper-slide card first-card">
+            <h3>Front End Developer - React Js</h3>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ea molestiae quia incidunt unde voluptates magni fugit iusto hic, <br>
-                adipisci reprehenderit dolores eveniet enim. Perferendis necessitatibus culpa voluptate tenetur facere?
+              Fully practical course focused on front end br <br />
+              development, divided into 6 class modules:
             </p>
-        </header>
-        <div class="cards">            
-            <div class="card first-card">
-                <h3>Front End Developer - React Js</h3>
-                <p>
-                    Fully practical course focused on front end br <br>
-                    development, divided into 6 class modules:
-                </p>
-                <ul>
-                    <li>Introduction to web</li>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Git and GitHub</li>
-                    <li>React Js</li>
-                </ul>
-                <button>Buy - only U$ 59,99</button>
-            </div>
-            <div class="card second-card">
-                <h3>Back End Developer - Node Js</h3>
-                <p>
-                    Fully practical course focused on back end <br>
-                    development, divided into 8 class modules:
-                </p>
-                <ul>
-                    <li>HTTP Protocols</li>
-                    <li>Undestandin the Node Js</li>
-                    <li>How to use Express Js</li>
-                    <li>Git and GitHub</li>
-                    <li>Relational Database - PostgreSQL</li>
-                    <li>Non-Relational Database</li>
-                    <li>Create your fisrt API - CRUD</li>
-                    <li>Deploying your Application</li>
-                </ul>
-                <button>Buy - only U$ 79,99</button>
-            </div>
-            <div class="card third-card">
-                <H3>Mobile Developer - React Native</H3>
-                <p>
-                    Fully practical course focused ob Mobile <br>
-                    development divided into 8 class modules:
-                </p>
-                <ul>
-                    <li>Introduction to mobile web</li>
-                    <li>What's hybrid or native development</li>
-                    <li>Review of HMTL5 and CSS3</li>
-                    <li>Javascript</li>
-                    <li>Git and GitHub</li>
-                    <li>Expo CLI</li>
-                    <li>React Native</li>
-                    <li>APK </li>
-                </ul>
-                <button>Buy - only U$ 69,99</button>
-            </div>
+            <ul>
+              <li>Introduction to web</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+              <li>Git and GitHub</li>
+              <li>React Js</li>
+            </ul>
+            <button>Buy - only U$ 59,99</button>
+          </div>
+
+          <div class="swiper-slide card second-card">
+            <h3>Back End Developer - Node Js</h3>
+            <p>
+              Fully practical course focused on back end <br />
+              development, divided into 8 class modules:
+            </p>
+            <ul>
+              <li>HTTP Protocols</li>
+              <li>Undestandin the Node Js</li>
+              <li>How to use Express Js</li>
+              <li>Git and GitHub</li>
+              <li>Relational Database - PostgreSQL</li>
+              <li>Non-Relational Database</li>
+              <li>Create your fisrt API - CRUD</li>
+              <li>Deploying your Application</li>
+            </ul>
+            <button>Buy - only U$ 79,99</button>
+          </div>
+
+          <div class="swiper-slide card third-card">
+            <h3>Mobile Developer - React Native</h3>
+            <p>
+              Fully practical course focused ob Mobile <br />
+              development divided into 8 class modules:
+            </p>
+            <ul>
+              <li>Introduction to mobile web</li>
+              <li>What's hybrid or native development</li>
+              <li>Review of HMTL5 and CSS3</li>
+              <li>Javascript</li>
+              <li>Git and GitHub</li>
+              <li>Expo CLI</li>
+              <li>React Native</li>
+              <li>APK</li>
+            </ul>
+            <button>Buy - only U$ 69,99</button>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+          <div class="swiper-pagination"></div>
+
+          <!-- <button id="next">
+                    <i class="fa-solid fa-arrow-right fa-xl" style="color: #ffd700;"></i>
+                </button> -->
         </div>
-        <footer>
-            <p>
-                Developed by 
-                <a href="https://github.com/geronimofx" target="_blank">
-                    @geronimofx
-                </a>
-            </p>
-        </footer>
+      </div>
+
+      <footer>
+        <p>
+          Developed by
+          <a href="https://github.com/geronimofx" target="_blank"
+            >@geronimofx</a
+          >
+        </p>
+      </footer>
     </main>
-</body>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        direction: "horizontal",
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: false,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
 </html>
