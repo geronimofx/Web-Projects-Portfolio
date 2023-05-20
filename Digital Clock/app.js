@@ -14,6 +14,8 @@ function displayTime() {
     ]
     let dayOfWeek = weekDay[date.getDay()]
 
+    let weekly = date.getDate()
+
     // Array to set the day of the week to apear in the screen
     const months = [
         'January', 'February', 'March', 'April', 'May', 'June',
@@ -35,7 +37,7 @@ function displayTime() {
     document.getElementById('hour').innerHTML = hours
     document.getElementById('minute').innerHTML = minutes
     document.getElementById('second').innerHTML = seconds
-    document.getElementById('season').innerHTML = month + '/' + actualYear
+    document.getElementById('season').innerHTML = weekly + '/' + month + '/' + actualYear
     document.getElementById('schedule').innerHTML = turno
 
 }
