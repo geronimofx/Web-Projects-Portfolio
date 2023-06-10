@@ -41,9 +41,16 @@
 }
 
 footer {
-    font-size: 22px;
+    font-size: 20px;
     color: #FFD700;
-    margin-bottom: 15px;
+
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 a {
