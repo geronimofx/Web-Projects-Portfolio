@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Genos', sans-serif;
+  color: #1b1c1e;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 250px;
+  width: 315px;
+
+  border: 1px solid #252525;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.wrapper h2 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.wrapper p:first-child{
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.wrapper #results {
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrapper #guessNumber {
+  border: none;
+  outline: none;
+  width: 300px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttons button {
+  width: 100px;
+  height: 35px;
+  margin: 0 0 15px 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid #1b1c1e;
+  border-radius: 7px;
+}
