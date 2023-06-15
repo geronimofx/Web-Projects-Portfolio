@@ -7,14 +7,14 @@ const startGame = () => {
   let results = document.querySelector('#results')
 
   if (randomNumber === guessNumber) {
-    results.innerHTML = `Congratulations, ${guessNumber} was the correct answer`
-    results.style.backgroundColor = "#00FF00"
+    results.innerHTML = `Congratulations, you win the game!`
+    results.style.color = "#FFD700"
   } else if (guessNumber > randomNumber) {
     results.innerHTML = `The number is less then ${guessNumber}`
-    results.style.backgroundColor = "red"
+    results.style.color = "red"
   } else if (guessNumber < randomNumber) {
     results.innerHTML = `The number is greater then ${guessNumber}`
-    results.style.backgroundColor = "red"
+    results.style.color = "red"
   }
 
 }
