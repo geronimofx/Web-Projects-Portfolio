@@ -1,4 +1,4 @@
-let btn = document.querySelector('#btn-color')
+let codeHex = document.querySelector('#btn-color')
 let colorDisplay = document.querySelector('#color-code')
 let colorHex
 
@@ -12,7 +12,19 @@ let randomColor = () => {
   return colorHex
 }
 
-btn.addEventListener('click', () => {
+codeHex.addEventListener('click', () => {
   document.querySelector("#container").style.backgroundColor = randomColor()
+  colorDisplay.style.display = "block"
   colorDisplay.innerHTML = colorHex
+  colorDisplay.style.backgroundColor = colorHex
+  colorDisplay.style.color = "#FFFFFF"
 })
+
+const copyClipboard = () => {
+  copyHex = colorDisplay.innerText
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyHex)
+
+  alert (`Copied the Hex Color ${colorHex}`)
+}

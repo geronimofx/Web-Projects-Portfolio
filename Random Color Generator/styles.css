@@ -56,6 +56,15 @@
 
 .wrapper #color-code {
   font-size: 18px;
+  display: none;
+  height: 30px;
+  width: 75px;
+  border: 1px solid #3c3c3c;
+  border-radius: 6px;
+}
+
+.wrapper button {
+  cursor: pointer;
 }
 
 footer {
