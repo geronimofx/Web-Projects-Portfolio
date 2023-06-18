@@ -27,7 +27,7 @@ The following table presents the technologies used in this project:
 |------------|----------------------------------------------------------|
 | HTML       | The basic structure of the page and game elements were defined in HTML.   |
 | CSS        | Custom styles were applied to the elements using CSS to make the game visually appealing. |
-| JavaScript | It was used to manipulate the HTML content and dynamically modify the CSS style. The innerHTML method was used to insert elements into the HTML, and changes to the CSS were made using JavaScript.. |
+| JavaScript | It was used to manipulate the HTML content and dynamically modify the CSS style. The innerHTML method was used to insert elements into the HTML, and changes to the CSS were made using JavaScript, besides we add some keydown events. |
 
 ## Learn More
 

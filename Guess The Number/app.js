@@ -1,4 +1,5 @@
 let randomNumber = Math.floor(Math.random() * 100)
+const playBtn = document.getElementById('enterBtn')
 console.log(randomNumber)
 
 const startGame = () => {
@@ -21,6 +22,15 @@ const startGame = () => {
   }
 
 }
+
+const handleKeyPress = (event) => {
+  if (event.key === 'Enter') {
+    playBtn.click(); // Dispara o evento de clique do botão
+  }
+}
+
+// Adiciona um ouvinte de eventos para o evento "keydown" no documento
+document.addEventListener('keydown', handleKeyPress);
 
 const resetGame = () => {
   window.location.reload()
