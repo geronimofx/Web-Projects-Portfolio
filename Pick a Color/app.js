@@ -3,6 +3,7 @@ const inputFile = document.querySelector("#file-input");
 const imgPreview = document.querySelector("#img-preview");
 const resultElement = document.getElementById("hex-result");
 const colorResult = document.getElementById('color-result')
+const label = document.getElementById('label')
 
 inputFile.addEventListener("change", () => {
   file = inputFile.files[0];
@@ -15,6 +16,7 @@ inputFile.addEventListener("change", () => {
   reader.onload = () => {
     imgPreview.src = reader.result;
     imgPreview.style.display = 'block'
+    label.style.display = 'none'
   };
 
   reader.readAsDataURL(file);
