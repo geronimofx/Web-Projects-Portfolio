@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pick a Color</title>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <img id="img-preview" src="" alt="">
+      <input id="file-input" accept="image/*" type="file">
+      <div class="wrapper">
+        <button id="pick-color">Pick a Color</button>
+        <div class="color-display">
+          <p id="color-result"></p>
+          <span id="hex-result"></span>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Developed by
+          <a href="https://github.com/geronimofx" target="_blank"
+            >@geronimofx</a
+          >
+        </p>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
