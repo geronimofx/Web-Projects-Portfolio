@@ -6,6 +6,8 @@ function displayTime() {
     let hours = ("0" + date.getHours()).slice(-2);
     let minutes = ("0" + date.getMinutes()).slice(-2);
     let seconds = ("0" + date.getSeconds()).slice(-2);
+    const greetings = ['Good Morning', 'Good Afternoon', 'Good Evening']
+    let index = hours >= 12 && hours < 17 ? 1 : hours >= 17 ? 2 : 0
 
     // Array to set the day of the week to apear in the screen
     let weekDay = [
@@ -33,7 +35,7 @@ function displayTime() {
         var turno = 'PM'
     }
 
-    document.getElementById('day').innerHTML = dayOfWeek
+    document.getElementById('day').innerHTML = `${greetings[index]} it's ${dayOfWeek}`
     document.getElementById('hour').innerHTML = hours
     document.getElementById('minute').innerHTML = minutes
     document.getElementById('second').innerHTML = seconds
