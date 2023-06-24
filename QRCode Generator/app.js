@@ -8,3 +8,12 @@ btnGenerator.addEventListener("click", () => {
   imgQRCode.src = qrCode
   imgQRCode.alt = 'QR Code gerado a partir do input que foi inserido no campo de entrada'
 })
+
+bntDownload.addEventListener('click', async () => {
+  const response = await fetch(imgQRCode.src)
+  const blob = await response.blob()
+  const downloadLink = document.createElement('a')
+  downloadLink.href = URL.createObjectURL(blob)
+  downloadLink.download = 'qrcode.jpg'
+  downloadLink.click()
+})
